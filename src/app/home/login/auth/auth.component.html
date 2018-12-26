@@ -1,0 +1,39 @@
+<div class="row row-auth">
+  <div *ngIf="message.text" class="alert alert-danger">{{message.text}}</div>
+  <form [formGroup]="form" class="form-auth" (ngSubmit)="onSubmit()">
+    <div class="form-group" [ngClass]="{'has-error': form.get('email').invalid && form.get('email').touched}">
+      <label for="exampleInputEmail1">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        placeholder="Enter email"
+        formControlName="email">
+      <span calss="form-help-text" *ngIf="form.get('email').invalid && form.get('email').touched">
+        <span *ngIf="form.get('email')['errors']['required']">Email не может быть пустым</span>
+        <span *ngIf="form.get('email')['errors']['email']">Введите корректный Email</span>
+      </span>
+    </div>
+    <div class="form-group" [ngClass]="{'has-error': form.get('password').invalid && form.get('password').touched}">
+      <label for="exampleInputPassword1">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="exampleInputPassword1"
+        placeholder="Password"
+        formControlName="password">
+      <span calss="form-help-text" *ngIf="form.get('password').invalid && form.get('password').touched">
+      <span *ngIf="form.get('password')['errors']['required']">Password не может быть пустым</span>
+      <span *ngIf="form.get('password')['errors']['minlength']">
+        Password должен быть меньше {{ form.get('password')['errors']['minlength']['requiredLength'] }} символов,
+        сейчас {{ form.get('password')['errors']['minlength']['actualLength'] }} </span>
+    </span>
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" formControlName="checkbox">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Войти</button>
+  </form>
+</div>

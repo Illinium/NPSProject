@@ -1,0 +1,12 @@
+<nps-add-manicure-price (onPriceAdded)="newPriceAdded($event)"></nps-add-manicure-price>
+<div class="col-md-8">
+  <div class="alert alert-success" *ngIf="message.text">{{message.text}}</div>
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-primary" *ngFor="let p of price">
+      <input type="text" value="{{p.title}}" #title>
+      <input type="number" value="{{p.price}}" #price>
+      <button class="btn btn-danger" (click)="Remove(p.id)">Удалить</button>
+      <button class="btn btn-success" (click)="Update(title.value, price.value, p.id)">сохранить</button>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,109 @@
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+.navbar-light .navbar-brand {
+  margin-left: 3%;
+}
+.navbar .nav-item .nav-link {
+  font-size: 1.125em;
+}
+.bg-pink {
+  background-color: #e87ce5;
+}
+.container-services h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+.container-services .service {
+  align-items: center;
+  text-align: center;
+  margin: 15px 0;
+}
+.container-services .service img:hover {
+  zoom: 1.03;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.container-services .service a {
+  text-decoration: none;
+  color: black;
+}
+.container-services .service p {
+  padding: 0 40px;
+}
+.container-services .service-describe {
+  margin-top: 10px;
+}
+.container-contacts {
+  margin: 20px 0 0 0;
+  background-color: #e87ce5;
+}
+.container-contacts .row-content {
+  padding: 20px 20px;
+}
+.container-contacts .row-content a {
+  text-decoration: none;
+  color: black;
+}
+.container-contacts h4 {
+  text-align: center;
+}
+.container-contacts i {
+  margin-top: 13px;
+}
+.container-contacts iframe {
+  margin: 0 auto;
+}
+.container-contacts .content--map {
+  text-align: center;
+  align-content: center;
+}
+/* about services and price */
+.container-mainCont {
+  margin-top: 80px;
+  text-align: center;
+}
+.about-price {
+  margin-top: 15px;
+}
+/* Auth Page */
+.row-auth {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+}
+.row-auth .form-auth {
+  background-color: #b3b3b3;
+}
+.row-auth .form-auth .form-group {
+  margin: 10px 15px;
+}
+.row-auth .form-auth button {
+  margin: 10px 0;
+  margin-left: 35%;
+}
+/* adminPage */
+/* make sidebar nav vertical */.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+}
+#sidebar a[data-toggle="collapse"] {
+  position: relative;
+}
+#sidebar .dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+#sidebar.active {
+  margin-left: -250px;
+}

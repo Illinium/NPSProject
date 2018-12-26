@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar fixed-top navbar-expand navbar-light bg-pink">
+  		<a class="navbar-brand" href="#"><h4>NPS</h4></a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    		<ul class="navbar-nav ml-auto">
+     			<li class="nav-item">
+        			<a class="nav-link" href="#">Мастера<span class="sr-only">(current)</span></a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="#">Цены</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="#">кк</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="#">Контакты</a>
+      			</li>
+    		</ul>
+  		</div>
+	</nav>
+            
+
+    <!-- masters page -->
+    
+    <div class="container container-mainCont">
+    	<div class="row">
+	    	<div class="col-md-4">
+			    <form>
+					<div class="form-group">
+					  	<label for="inputName">Имя</label>
+					    <input type="email" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Введите имя">
+					</div>
+					<div class="form-group">
+					    <label for="inputSName">Фамилия</label>
+					    <input type="password" class="form-control" id="inputSName" placeholder="Введите Фамилию">
+					</div>
+					<div class="form-check">
+					    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+					    <label class="form-check-label" for="exampleCheck1">Я не робот</label>
+					</div>
+					<button type="submit" class="btn btn-primary">Добавить</button>
+				</form>
+			</div>
+			<div class="col-md-8">
+				<ul class="list-group">
+					<li class="list-group-item list-group-item-primary">
+						Name + sname <button class="btn btn-danger">Удалить</button> <button class="btn btn-success">сохранить</button>
+					</li>
+					<li class="list-group-item list-group-item-primary">
+						Name + sname <button class="btn btn-danger">Удалить</button> <button class="btn btn-success">сохранить</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+    <!-- masters page -->
+
+
+    <!-- price page -->
+	
+    <div class="container container-mainCont">
+    	<div class="row">
+	    	<div class="col-md-4">
+			    <form>
+					<div class="form-group">
+					  	<label for="inputNameService">Название услуги</label>
+					    <input type="email" class="form-control" id="inputNameService" aria-describedby="emailHelp" placeholder="Введите имя">
+					</div>
+					<div class="form-group">
+					    <label for="inputPrice">Цена</label>
+					    <input type="password" class="form-control" id="inputPrice" placeholder="Введите Фамилию">
+					</div>
+					<div class="form-check">
+					    <input type="checkbox" class="form-check-input" id="check2">
+					    <label class="form-check-label" for="check2">Я не робот</label>
+					</div>
+					<button type="submit" class="btn btn-primary">Добавить</button>
+				</form>
+			</div>
+			<div class="col-md-8">
+				<ul class="list-group">
+					<li class="list-group-item list-group-item-primary">
+						Услуга + Цена <button class="btn btn-danger">Удалить</button> <button class="btn btn-success">сохранить</button>
+					</li>
+					<li class="list-group-item list-group-item-primary">
+						Услуга + Цена <button class="btn btn-danger">Удалить</button> <button class="btn btn-success">сохранить</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+    <!-- price page -->
+
+           
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	
+</body>
+</html>

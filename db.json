@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "alya.khodorko@gmail.com",
+      "password": "kalambur"
+    }
+  ],
+  "masters": [
+    {
+      "id": 1,
+      "sname": "khodorko",
+      "name": "khodorko",
+      "age": 24
+    }
+  ],
+  "price": [
+    {
+      "title": "Маникюр гигиенический1",
+      "price": "115",
+      "category": "manicure",
+      "id": 1
+    },
+    {
+      "title": "Маникюр гигиенический2",
+      "price": "126",
+      "category": "manicure",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "title": "Стрижка мужская1",
+      "price": 100,
+      "category": "hair"
+    },
+    {
+      "id": 4,
+      "title": "Стрижка мужская2",
+      "price": 110,
+      "category": "hair"
+    },
+    {
+      "id": 5,
+      "title": "Стрижка мужская3",
+      "price": 120,
+      "category": "hair"
+    },
+    {
+      "id": 6,
+      "title": "Стрижка мужская4",
+      "price": 130,
+      "category": "hair"
+    },
+    {
+      "title": "tyjtyj",
+      "price": 123,
+      "category": "manicure",
+      "id": 7
+    },
+    {
+      "title": "ccvbcbv",
+      "price": 1323,
+      "category": "visage",
+      "id": 8
+    }
+  ],
+  "manicure": [
+    {"title": "ccvbcbv", "price": 1323, "id": 1}
+  ],
+  "hair": [
+    {"title": "ccvbcbv", "price": 1323, "id": 1}
+  ],
+  "cosmetology": [
+    {"title": "ccvbcbv", "price": 1323, "id": 1}
+  ]
+}
