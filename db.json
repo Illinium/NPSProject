@@ -10,67 +10,54 @@
     {
       "id": 1,
       "sname": "khodorko",
-      "name": "khodorko",
+      "name": "Anhelina",
       "age": 24
     }
   ],
-  "price": [
+  "manicure": [
     {
-      "title": "Маникюр гигиенический1",
-      "price": "115",
-      "category": "manicure",
-      "id": 1
-    },
-    {
-      "title": "Маникюр гигиенический2",
-      "price": "126",
-      "category": "manicure",
+      "title": "adasdsad",
+      "price": 11233231,
       "id": 2
     },
     {
-      "id": 3,
-      "title": "Стрижка мужская1",
-      "price": 100,
-      "category": "hair"
-    },
+      "title": "lkmkmkl",
+      "price": 1234,
+      "id": 4
+    }
+  ],
+  "hair": [
     {
-      "id": 4,
-      "title": "Стрижка мужская2",
-      "price": 110,
-      "category": "hair"
-    },
-    {
-      "id": 5,
-      "title": "Стрижка мужская3",
-      "price": 120,
-      "category": "hair"
-    },
-    {
-      "id": 6,
-      "title": "Стрижка мужская4",
-      "price": 130,
-      "category": "hair"
-    },
-    {
-      "title": "tyjtyj",
-      "price": 123,
-      "category": "manicure",
-      "id": 7
-    },
+      "title": "hair1",
+      "price": "123456",
+      "id": 1
+    }
+  ],
+  "cosmetology": [
     {
       "title": "ccvbcbv",
       "price": 1323,
-      "category": "visage",
-      "id": 8
+      "id": 1
+    },
+    {
+      "title": "ashdlkajdlk",
+      "price": "3211",
+      "id": 2
+    },
+    {
+      "title": "kdjkasdj;lkasdm",
+      "price": 5555555,
+      "id": 3
+    },
+    {
+      "title": "qqqqqq",
+      "price": 14,
+      "id": 4
+    },
+    {
+      "title": "qqqqqqeeee",
+      "price": "147897",
+      "id": 5
     }
-  ],
-  "manicure": [
-    {"title": "ccvbcbv", "price": 1323, "id": 1}
-  ],
-  "hair": [
-    {"title": "ccvbcbv", "price": 1323, "id": 1}
-  ],
-  "cosmetology": [
-    {"title": "ccvbcbv", "price": 1323, "id": 1}
   ]
 }

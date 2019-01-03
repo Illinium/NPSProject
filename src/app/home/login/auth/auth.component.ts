@@ -47,7 +47,7 @@ export class AuthComponent implements OnInit {
           if (formData.password === user.password) {
             window.localStorage.setItem('user', JSON.stringify(user));
             this.authService.logIn();
-            this.router.navigate(['./admin/price']);
+            this.router.navigate(['./manicureprice']);
           } else {
             this.showMessage(new Message('Не верный пароль!, попробуйте снова')) ;
           }

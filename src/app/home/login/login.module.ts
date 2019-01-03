@@ -12,6 +12,10 @@ import { CosmetologyPriceComponent } from './admin/price-edit/cosmetology-price/
 import { VisagePriceComponent } from './admin/price-edit/visage-price/visage-price.component';
 import { HairPriceComponent } from './admin/price-edit/hair-price/hair-price.component';
 import { AddManicurePriceComponent } from './admin/price-edit/manicure-price/add-manicure-price/add-manicure-price.component';
+import { AddCosmetologyPriceComponent } from './admin/price-edit/cosmetology-price/add-cosmetology-price/add-cosmetology-price.component';
+import { AddHairPriceComponent } from './admin/price-edit/hair-price/add-hair-price/add-hair-price.component';
+import { AddVisagePriceComponent } from './admin/price-edit/visage-price/add-visage-price/add-visage-price.component';
+
 
 @NgModule({
   imports: [
@@ -20,7 +24,7 @@ import { AddManicurePriceComponent } from './admin/price-edit/manicure-price/add
     ReactiveFormsModule,
     AuthRoutingModule
   ],
-  declarations: [ LoginComponent, AdminComponent, AuthComponent, PriceEditComponent, ManicurePriceComponent, CosmetologyPriceComponent, VisagePriceComponent, HairPriceComponent, AddManicurePriceComponent ],
+  declarations: [ LoginComponent, AdminComponent, AuthComponent, PriceEditComponent, ManicurePriceComponent, CosmetologyPriceComponent, VisagePriceComponent, HairPriceComponent, AddManicurePriceComponent, AddCosmetologyPriceComponent, AddHairPriceComponent, AddVisagePriceComponent ],
   providers: [ AuthService ]
 })
 export class LoginModule { }

@@ -16,9 +16,5 @@ export class PriceEditComponent implements OnInit {
 
   ngOnInit() {
   }
-  onSubmit(price) {
-    // this.baseApi.post('price', price);
-    console.log(price.value);
-  }
 
 }

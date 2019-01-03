@@ -15,11 +15,9 @@ export class ManicurePriceComponent implements OnInit {
 
   ngOnInit() {
     this.message = new Message('');
-    this.baseApi.get('price')
+    this.baseApi.get('manicure')
       .subscribe((price: any) => {
-        this.price = price.filter(
-          price => price.category === 'manicure'
-        );
+        this.price = price;
       });
   }
 
@@ -28,21 +26,20 @@ export class ManicurePriceComponent implements OnInit {
   }
 
   Update(title: string, price: number, id: number) {
-    const category = 'manicure';
-    let data: PriceModel = {title, price, category, id};
-
-    this.baseApi.post(`price/${id}`, data )
+    const data: PriceModel = {title, price, id};
+    this.baseApi.put(`manicure/${data.id}`, data )
       .subscribe((data: PriceModel ) => {
         this.message.text = 'Категория успешно отредактирована!';
         window.setTimeout(() => this.message.text = '', 5000);
     });
   }
 
-  Remove(id: number) {
-    this.baseApi.delete(`price/${id}`)
+  Remove(price: PriceModel) {
+    const id = price.id;
+    this.baseApi.delete(`manicure/${id}`)
       .subscribe((data: any) => {
-        this.ngOnInit();
-        this.message.text = 'Категория успешно удалина!';
+        this.price = this.price.filter(p => p !== price);
+        this.message.text = 'Категория успешно удалена!';
         window.setTimeout(() => this.message.text = '', 5000);
       });
   }

@@ -3,11 +3,11 @@ import {BaseApi} from '../../../../../../shared/core/base-api';
 import {PriceModel} from '../../model/price.model';
 
 @Component({
-  selector: 'nps-add-manicure-price',
-  templateUrl: './add-manicure-price.component.html',
-  styleUrls: ['./add-manicure-price.component.scss']
+  selector: 'nps-add-hair-price',
+  templateUrl: './add-hair-price.component.html',
+  styleUrls: ['./add-hair-price.component.scss']
 })
-export class AddManicurePriceComponent implements OnInit {
+export class AddHairPriceComponent implements OnInit {
 
   constructor(private baseApi: BaseApi) { }
   @Output() onPriceAdded = new EventEmitter<PriceModel>();
@@ -19,7 +19,7 @@ export class AddManicurePriceComponent implements OnInit {
     let {title, price} = f.value;
     if (price < 0) price *= -1;
     const newPrice = new PriceModel(title, price);
-    this.baseApi.post('manicure', newPrice)
+    this.baseApi.post('hair', newPrice)
       .subscribe((newPrice: PriceModel) => {
         f.reset();
         f.form.patchValue({price: 1});

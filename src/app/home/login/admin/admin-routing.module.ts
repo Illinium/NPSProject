@@ -14,9 +14,9 @@ import {VisagePriceComponent} from './price-edit/visage-price/visage-price.compo
 
 const routes: Routes = [
       { path: 'auth', component: AuthComponent },
-      { path: 'admin', component: AdminComponent, children: [
+      { path: '', component: AdminComponent, children: [
           { path: '', component: PriceEditComponent, children: [
-              {path: 'price', component: ManicurePriceComponent},
+              {path: 'manicureprice', component: ManicurePriceComponent},
               {path: 'hairprice', component: HairPriceComponent},
               {path: 'cosmetologyprice', component: CosmetologyPriceComponent},
               {path: 'visageprice', component: VisagePriceComponent}
